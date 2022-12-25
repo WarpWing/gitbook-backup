@@ -48,13 +48,13 @@ Kafka uses a distributed commit log as its storage layer. Writes are appended to
 
 Memphis also uses a distributed commit log called streams (made by NATS Jetstream) as its storage layer, which can be written entirely on the broker's (server) memory or disk.\
 Memphis also uses offsets but abstracts them completely, so the heavy lifting of saving a record of the used offsets resides on Memphis and not on the client.\
-Memphis also offers storage tiering for offloading messages to S3-compatible storage for an infinite storage time and more cost-effective storage. Reads are sequential.
+Memphis also offers storage tiering for offloading messages to Amazon S3 for long term and cost effective storage. Reads are sequential.
 
 ## Ecosystem and User Experience
 
 | Parameter                            | Memphis.dev               | Apache Kafka                           |
 | ------------------------------------ | ------------------------- | -------------------------------------- |
-| Deployment                           | Stright forward           | Requires deep understanding and design |
+| Deployment                           | Straight forward           | Comprehensive understanding and careful planning |
 | Enterprise support                   | Yes                       | 3rd parties like Confluent, AWS MSK    |
 | Managed cloud offerings              | Yes                       | 3rd parties like Confluent, AWS MSK    |
 | Self-Healing                         | Yes                       | No                                     |
