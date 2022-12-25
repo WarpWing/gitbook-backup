@@ -34,7 +34,7 @@ Both technologies are available under fully open-source licenses. Memphis also h
 ### Components
 
 Kafka uses Apache Zookeeper™ for consensus and message storage.\
-Memphis uses MongoDB for GUI state management only and will be removed soon, making Memphis without any external dependency. Memphis achieves consensus by using RAFT.
+Memphis uses MongoDB for GUI state management only and will be removed soon, making Memphis without any external dependency. Memphis achieves consensus by using the RAFT consensus algorithm.
 
 ### Message Consumption Model
 
